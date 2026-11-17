@@ -1,0 +1,29 @@
+# secrets
+db/local-oracle.secrets.md
+*.env
+# Data Modeler backups
+model/backup-*/
+model/*.dmd~
+# editors / OS
+*~
+*.bak
+.DS_Store
+Thumbs.db
+.idea/
+*.iml
+.vscode/
+# LaTeX build files
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+hand-in/
+# not for the public repo
+CLAUDE.md
+Semestrální projekt TDS I.pdf
+model/REVIEW.md
+model/GUIDE-logical.md
+model/updated_logical.pdf

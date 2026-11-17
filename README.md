@@ -21,7 +21,7 @@ checks and the design notes for the TDS checklist. The assignment PDF is `Semest
 cd db
 for f in 01_schema.sql 02_seed.sql 03_checks.sql 04_queries.sql; do docker cp "$f" vis-oracle:/tmp/; done
 printf '@/tmp/01_schema.sql\n@/tmp/02_seed.sql\n@/tmp/03_checks.sql\n@/tmp/04_queries.sql\nexit\n' \
-  | docker exec -i vis-oracle sqlplus -S CATERING/***REMOVED***@//localhost:1521/FREEPDB1
+  | docker exec -i vis-oracle sqlplus -S CATERING/<CATERING password>@//localhost:1521/FREEPDB1
 ```
 
 Or in SQL Developer: connection `localhost:1521`, service `FREEPDB1`, user `CATERING`, then open
