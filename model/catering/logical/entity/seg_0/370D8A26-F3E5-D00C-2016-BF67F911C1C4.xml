@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="370D8A26-F3E5-D00C-2016-BF67F911C1C4" name="product price history">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Journal of previous product prices, filled by trigger.]]></commentInRDBMS>
+<generatorID>42022925-3483-60DC-04AA-7A968AA5B8E6</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="history id" id="0C3644F4-985F-EF99-284C-209DE4B2648D">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>2BF27C2F-A995-9188-D427-61F905A78CA0</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<defaultValue>seq_price_history.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="product id" id="3954B698-A302-5EF0-1A06-5CAD4198010D">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>1A2D1CED-C202-7B7D-C1FB-2E8AA051419C</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<referedAttribute>06587732-85BD-018E-CBE1-5218E8C1B22B</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="old price" id="02ECADEC-C4D2-90D2-D0CE-2425BDA3B9BF">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>5C24D402-7EEE-25B3-C690-146DD8CA52E6</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D7A89057-96A3-DE81-8EC3-9ABCD7E78D74</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="new price" id="5DE19129-1443-0C33-0FD6-E9DB9C5A3E64">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>2B4BD708-5FE9-6C94-1DD0-FCDD06A98BFB</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D7A89057-96A3-DE81-8EC3-9ABCD7E78D74</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="changed at" id="8E8CF6AF-801C-3AD9-CB76-979971B9E927">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>CA8D544E-86AC-AB55-0331-FEA63B5ABF3A</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>7F9637BA-1628-DD0D-FC5E-5D5D04FACC59</domain>
+<defaultValue>LOCALTIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="changed by" id="CCF5C2E6-CF0F-0180-74A7-E328C3FDE013">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>B5702F69-0057-3039-C7C0-B32423B2AB2B</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>74F5BCE4-FFE6-CB74-71F7-9C71C1F740B4</domain>
+<defaultValue>USER</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6446D8DA-C2F6-8467-33E6-B78177371E22" name="pk product price history">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>1B44A144-E2F3-724C-65B3-8C2A67A2E3DC</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0C3644F4-985F-EF99-284C-209DE4B2648D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

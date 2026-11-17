@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2C87D782-94FB-856A-0DC5-C02970578BCC" name="products">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>FFD08C02-61E9-CA00-BB26-BF9BF67601D4</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="product_id" id="D9EE6BE7-FD37-0466-5F6B-2532E70C7AB0">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>3CC7C30B-3C88-3C2E-3A17-2E7C904EFE7F</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<defaultValue>seq_products.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_products</autoIncrementSequenceName>
+</Column>
+<Column name="name" id="207EAB60-31CB-985C-99BA-3AE8877B6721">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>2C491AC8-8C4E-F7C5-476E-E296E8B6887E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>43763C6B-8143-6EA5-C262-DA2B92BB7183</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="description" id="213F8A0D-D1C7-858B-8372-C307DBBBD133">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>2750046C-A1F7-7BBB-CF66-0278AE022262</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>76DF508B-5FA8-D867-89CF-355405127482</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="unit" id="6238B668-0B23-7436-F609-69AF5803923E">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>98CC9FEC-5CB6-1F36-19B5-0582E9FBC6FB</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>67B7B72A-3E1A-3BE5-6F36-32EA75095EE0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="current_price" id="77EA8AF3-CEDE-6E91-8ACE-D42B40FE5BAE">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>3F147C92-81AD-7E5D-1FDA-7C00648D7EE4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D7A89057-96A3-DE81-8EC3-9ABCD7E78D74</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vat_rate" id="D706BC18-9E31-22C1-6468-2E11A1D7A90E">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>40505AA8-B463-E92A-012B-3CB8A2C03D5C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>28C3D46B-1172-F3BF-B8F5-407AF622ABC5</domain>
+<defaultValue>12</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="photo" id="E661C12D-F996-F6AB-7157-64EB72AAC14B">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>5D9666CC-FD7D-5D60-F7BA-62E18F19458F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<domain>77699115-15B8-A24E-F75D-145696D133B8</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="559454FF-1CE3-AB6C-4262-BF1AA6721C5F" name="pk_products">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>19838F5D-750A-5609-B261-62C049C145FB</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9EE6BE7-FD37-0466-5F6B-2532E70C7AB0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D65BFAC0-FE47-C873-7494-53EB5FE539BD" name="uq_products_name">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>13BE9A4C-7BC4-94A2-53A0-AF82D0FB243B</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="207EAB60-31CB-985C-99BA-3AE8877B6721"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ck_products_price" directorySegmentName="seg_0" id="DDC98E6A-9B6C-B047-A4AF-241DEE25E087">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>CADF5071-AC84-9434-8675-3FD626FB2920</importedID>
+<rule><![CDATA[current_price >= 0]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ck_products_vat" directorySegmentName="seg_0" id="11693700-1B4F-D7FA-CF23-66309213B2A2">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>4460339D-D607-9854-A7F9-664694861D62</importedID>
+<rule><![CDATA[vat_rate IN (0, 12, 21)]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ck_products_unit" directorySegmentName="seg_0" id="388DA5DF-0207-9244-75C4-9DA8A55B357D">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>82101DE9-D5E2-D9D0-C094-77C95B7D5FA9</importedID>
+<rule><![CDATA[unit IN ('pcs', 'portion', 'kg', 'l', 'set')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

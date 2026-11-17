@@ -1,0 +1,10 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SequenceOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.SequenceOraclev10g" name="seq_menus" directorySegmentName="seg_0" id="1AF5CEF4-B992-81E5-B833-53DA979F53F4">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:16 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<incrementBy>1</incrementBy>
+<noCache>YES</noCache>
+<startWith>1</startWith>
+</SequenceOraclev10g>

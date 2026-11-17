@@ -1,0 +1,273 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DD909E15-A7CC-C852-3367-8C7807E63B31" name="comments">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>EE0335BF-516A-5296-A883-FBB951CEC1C9</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="comment_id" id="A1256EC0-9E7C-744E-A5D2-E2033290B879">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>87B6BA47-E6DD-FA99-6078-9783DA39C405</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<defaultValue>seq_comments.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_comments</autoIncrementSequenceName>
+</Column>
+<Column name="menu_id" id="CCCE96D1-16CB-02F4-71CE-231C3E540CF9">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>4D2B5E94-1E93-075E-65AC-E7E6BFF8091D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F510105C-0E33-E848-C800-93085D37272A" referredColumn="DAC22380-E307-5532-4628-F000276FFDB6"/>
+</associations>
+</Column>
+<Column name="revision_no" id="E4569D8F-E2C8-2017-ED73-14CD856D197B">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>1616DD31-CC9B-024F-552B-1A14A4894B59</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>737940B5-35A5-EC28-EF28-262F041059A1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F510105C-0E33-E848-C800-93085D37272A" referredColumn="E742E1EE-3C2E-3EAA-D8EB-C51A146D0148"/>
+</associations>
+</Column>
+<Column name="category_id" id="8DD969F4-1980-F4DF-E61A-F219F13EFD14">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>BC00D455-F57C-C91E-165F-EE8449FA4FB4</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="03617F34-A9AC-5263-E53B-9659E9FC4FB5" referredColumn="486AEEAB-DE7E-9FA1-CC0F-F1D9CB50446C"/>
+</associations>
+</Column>
+<Column name="product_id" id="AFB028E7-0EF4-60E5-71C0-C4FDFFB4B9B1">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>AF78B5A7-A0CF-ABC2-B1C6-F1EB75713D39</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="03617F34-A9AC-5263-E53B-9659E9FC4FB5" referredColumn="E5661F45-7F2C-5C0F-9ADB-9431BFF08807"/>
+</associations>
+</Column>
+<Column name="author_name" id="BE6E2FEF-6EA4-8A43-2B5B-50B36809D7B4">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>C5E26B66-CF16-848D-5FFA-69128569DD79</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>43763C6B-8143-6EA5-C262-DA2B92BB7183</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="body" id="F89324E1-EC99-3D4C-5462-DBA4FEE4A248">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>C62F5D68-66DE-E6A0-5F45-EC14523957EE</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>E9A8E7B9-0401-0640-23B4-77D5A5B55F74</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="AEDC516D-C84C-D336-96DE-C1B9ABBB723F">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>8D2E7379-C5C4-7CA1-2F53-2F90CD28CEA0</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<domain>71A93901-72B6-1125-213C-EE313ECEA7DB</domain>
+<defaultValue>SYSTIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="resolved" id="846A2020-B647-10FE-E222-46B38718A104">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>CCBF50D5-49C5-F451-E246-90413E4D60AB</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>75589153-5A73-30A8-8D39-EF2ADC6A605D</domain>
+<defaultValue>&apos;N&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="resolution_note" id="6C61BC94-9F80-5EC1-1DA8-0CE2FE32746F">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>EEEF2BCC-5343-F660-2480-6512233C865C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>91DF1FA5-A38A-C030-46FE-C6653345586D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="resolved_by" id="F5BE2260-CD3A-EA8B-0D35-56AE4122526D">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>E04ECE8B-E651-A075-D8F2-90AD46E97B23</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="07ACFFE9-CCE8-C390-9707-7DD6DF811A6B" referredColumn="529706CD-BED7-A5A0-64E8-20D847748F93"/>
+</associations>
+</Column>
+<Column name="resolved_at" id="9E408A9A-A223-F771-99B9-BCEBA54172E7">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>62340552-5764-E06C-3C35-8318EEF3645F</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>7F9637BA-1628-DD0D-FC5E-5D5D04FACC59</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D7F0A03F-845B-B2BA-15FF-7A93BF5D9221" name="pk_comments">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>730C3F48-902D-48D8-8A2E-7EC20DD9AEFD</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A1256EC0-9E7C-744E-A5D2-E2033290B879"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A65AEC10-5093-DED2-3ACA-E2C7B554A820" name="ix_comments_revision">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>A586D0F8-90CB-1BBD-1AB3-53D09D30C507</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CCCE96D1-16CB-02F4-71CE-231C3E540CF9"/>
+<colUsage columnID="E4569D8F-E2C8-2017-ED73-14CD856D197B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="365C5035-99B2-8F0D-1AF1-98AA256A43AC" name="ix_comments_item">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>28D545C8-A8E5-653F-E71D-FE7C88D49F2D</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DD969F4-1980-F4DF-E61A-F219F13EFD14"/>
+<colUsage columnID="AFB028E7-0EF4-60E5-71C0-C4FDFFB4B9B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5660303F-3550-E5C5-C580-8812372987AD" name="fk_comments_item">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8DD969F4-1980-F4DF-E61A-F219F13EFD14"/>
+<colUsage columnID="AFB028E7-0EF4-60E5-71C0-C4FDFFB4B9B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7FAECC26-1EA0-520D-6195-5C60FE6A4393" name="fk_comments_resolved_by">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F5BE2260-CD3A-EA8B-0D35-56AE4122526D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8012F076-18A7-00AA-4385-F9FD5BC6DA70" name="fk_comments_revision">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CCCE96D1-16CB-02F4-71CE-231C3E540CF9"/>
+<colUsage columnID="E4569D8F-E2C8-2017-ED73-14CD856D197B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ck_comments_resolved" directorySegmentName="seg_0" id="ACAD3313-1DBD-92F2-A5F4-A8372D370B9B">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>AB025057-2853-CDC1-8674-342749CE862A</importedID>
+<rule><![CDATA[resolved IN ('Y', 'N')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ck_comments_resolution" directorySegmentName="seg_0" id="9E8DFFC0-5AE4-61E8-AA96-8FE30DF6A1C1">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>C0AE2A80-6084-4596-4209-B22BDE35923A</importedID>
+<rule><![CDATA[(resolved = 'N' AND resolved_by IS NULL AND resolved_at IS NULL AND resolution_note IS NULL) OR (resolved = 'Y' AND resolved_by IS NOT NULL AND resolved_at IS NOT NULL)]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="71CC461A-001E-857F-400C-D2E2E38CE3DB" mainViewID="616E252A-E7D7-046F-32B8-ABCB5FFAB97E">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:00:33 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>01F6E6D1-21D0-CFBD-ABDD-3988D1813575</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>01_schema.sql</fileName>
+<pathName>/home/jan/Documents/VSB/tretak/TDS/db</pathName>
+<dbType>17</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

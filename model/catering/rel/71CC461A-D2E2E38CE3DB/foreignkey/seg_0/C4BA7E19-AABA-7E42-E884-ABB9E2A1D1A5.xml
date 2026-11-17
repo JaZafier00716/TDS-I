@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C4BA7E19-AABA-7E42-E884-ABB9E2A1D1A5" containerWithKeyObject="42022925-3483-60DC-04AA-7A968AA5B8E6" localFKIndex="0E2E8BEE-9E93-C509-F3E2-A6A02A459028" name="fk_price_history_product">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>AD4554DB-5040-AFC3-0590-F637D8A1FF5E</importedID>
+<referredTableLongName>products</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>2C87D782-94FB-856A-0DC5-C02970578BCC</referredTableID>
+<keyObject>559454FF-1CE3-AB6C-4262-BF1AA6721C5F</keyObject>
+<referredKeyID>559454FF-1CE3-AB6C-4262-BF1AA6721C5F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>product_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

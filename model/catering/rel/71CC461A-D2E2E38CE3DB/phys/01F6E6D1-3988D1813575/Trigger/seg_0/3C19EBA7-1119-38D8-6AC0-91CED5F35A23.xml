@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_products_price_history" directorySegmentName="seg_0" id="3C19EBA7-1119-38D8-6AC0-91CED5F35A23">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:16 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<actions>UPDATE</actions>
+<body><![CDATA[BEGIN
+  INSERT INTO product_price_history (product_id, old_price, new_price)
+  VALUES (:OLD.product_id, :OLD.current_price, :NEW.current_price);
+END;]]></body>
+<triggerTime>AFTER</triggerTime>
+<columns>77EA8AF3-CEDE-6E91-8ACE-D42B40FE5BAE</columns>
+<condition><![CDATA[OLD.current_price <> NEW.current_price]]></condition>
+<table>2C87D782-94FB-856A-0DC5-C02970578BCC</table>
+</TriggerOraclev10g>

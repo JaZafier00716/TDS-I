@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_comments_item" directorySegmentName="seg_0" id="E67910DB-714F-E5C2-2DF2-944A4643A587">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>03617F34-A9AC-5263-E53B-9659E9FC4FB5</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<sourcePk>99CE8808-C40E-BA7D-5E58-A860B4BF765E</sourcePk>
+<targetPk>DD1B31AA-ABAA-F50B-526E-6B9F6EA8FAEE</targetPk>
+<arc>4224473A-9A44-FF8D-732E-0A32CC893B49</arc>
+<identifying>false</identifying>
+<nameOnSource>receives</nameOnSource>
+<nameOnTarget>is about</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E72013FC-4E5D-3E93-CABE-36D549487BCA</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>739C60D9-9C92-E501-B60A-30526322C35F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

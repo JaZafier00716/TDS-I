@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B1D43D98-A9D3-9B74-BB3D-7C888BEFC586" name="allergen">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>5F05849C-503D-6569-3D76-53693D7FB4F9</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="allergen id" id="70B4C81A-4D1B-9868-0DE2-8E0920BE30B9">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>1B4C7275-1583-E47E-4732-765321940831</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C300A069-C5BE-B366-FA12-E2C7578A0484</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="096C0E26-D890-CE55-1F56-7C329A558F78">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>3EB61780-CC5E-1699-C8E5-289E1FFED4AD</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BFD3FC86-940D-7A1F-E85C-DB1C6D9AE1F9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A997AA1A-3701-FEAC-A949-87562239DFBB" name="pk allergens">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>C2EF5E8A-918E-B01D-D32B-F0DA35A3CAE2</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>70B4C81A-4D1B-9868-0DE2-8E0920BE30B9</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

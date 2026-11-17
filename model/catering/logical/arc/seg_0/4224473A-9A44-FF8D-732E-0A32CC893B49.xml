@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Arc class="oracle.dbtools.crest.model.design.logical.Arc" directorySegmentName="seg_0" id="4224473A-9A44-FF8D-732E-0A32CC893B49" name="ck_comments_arc">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<entity>739C60D9-9C92-E501-B60A-30526322C35F</entity>
+<relations>
+<relationID>CCB14128-9D36-BAC9-580D-7181738B65A3</relationID>
+<relationID>E67910DB-714F-E5C2-2DF2-944A4643A587</relationID>
+</relations>
+</Arc>

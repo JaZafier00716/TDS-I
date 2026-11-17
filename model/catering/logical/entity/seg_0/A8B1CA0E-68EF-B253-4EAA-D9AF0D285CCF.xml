@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A8B1CA0E-68EF-B253-4EAA-D9AF0D285CCF" name="project node">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[Project content tree: folders and documents (single table inheritance).]]></commentInRDBMS>
+<generatorID>48DF4199-5D55-C01C-A2C4-95313EBAA81A</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="node id" id="11931C32-6F0B-302B-DC87-7E7B2760DB45">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>CF9F9EBF-B1D9-D52D-BD97-F2222A5D624B</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<defaultValue>seq_project_nodes.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="project id" id="4B947943-9094-9EB5-4DCB-0288BCAEBE7E">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>7AF6E078-5107-E03F-16D3-8DFCE3FDE3E1</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<referedAttribute>2D340CC8-72CA-3061-1D15-BA9028DF929D</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="F06F102A-CEF5-B3DD-DEF9-C5F7F7799A62">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>E540D3A0-C5ED-F1C5-CDDE-6BD669B49AB4</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>63BDBF6D-76E0-03ED-A470-5B1508BCD66A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="created at" id="D6ABE2AE-6438-C3F6-BAC9-AA84BAE6388B">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>39CE81A1-2446-2AA1-BDFC-94705567F519</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>7F9637BA-1628-DD0D-FC5E-5D5D04FACC59</domain>
+<defaultValue>LOCALTIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="node id1" id="A78F2B5E-1E6B-A43E-AAD4-789CA73AE99E">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:46:15 UTC</createdTime>
+<generatorID>6649231F-1FAB-ED32-D017-2DD866620B4D</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>11931C32-6F0B-302B-DC87-7E7B2760DB45</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A9306609-C13A-4CC2-CA9B-A53471358D31" name="pk project nodes">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>99D2CD7C-C513-936F-B8B4-C6DF7DE50670</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>11931C32-6F0B-302B-DC87-7E7B2760DB45</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="4C21E4AB-3243-B4B1-03A8-63E09BFE883C" name="uq project nodes sibling">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>F7FCFDF7-5AD9-FB76-C272-934A8BAE6EC7</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<newElementsIDs>F06F102A-CEF5-B3DD-DEF9-C5F7F7799A62,6649231F-1FAB-ED32-D017-2DD866620B4D</newElementsIDs>
+<usedAttributes>
+<attributeRef>F06F102A-CEF5-B3DD-DEF9-C5F7F7799A62</attributeRef>
+<attributeRef>A78F2B5E-1E6B-A43E-AAD4-789CA73AE99E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

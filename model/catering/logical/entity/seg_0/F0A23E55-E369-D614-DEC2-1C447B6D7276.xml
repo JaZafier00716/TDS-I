@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F0A23E55-E369-D614-DEC2-1C447B6D7276" name="menu category">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>FADA6A42-164C-F9E0-C3E1-923477520013</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="category id" id="EB1621EC-F289-7A03-6B5D-8B650CD5DEBD">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>7C786D0D-2757-8915-D115-C7C27CCB1AAA</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<defaultValue>seq_menu_categories.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="menu id" id="2B56BDD2-D1B3-CA55-F3B7-8063E84740C2">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>488611CB-7723-A9DE-A5F2-6DEDE3890C79</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<referedAttribute>B44A730E-EFBA-F70C-422F-1C055BC8D29D</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="revision no" id="AC76E59B-9D1A-9B88-75A5-FAEFADE9A933">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>488611CB-7723-A9DE-A5F2-6DEDE3890C79</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<referedAttribute>B0D04AD0-07A6-CFAB-FD80-704FBFE63563</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>737940B5-35A5-EC28-EF28-262F041059A1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="5FA0B7D6-B6BF-6527-37EF-DA84AC9C7763">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>6A4CB3AF-D7ED-9228-D6DA-1938C4763277</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>BFD3FC86-940D-7A1F-E85C-DB1C6D9AE1F9</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="position" id="0F8DDA56-87AE-A6B6-FF29-9CDDDDE065A4">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>A001A717-6881-81D7-3182-0C68491ED086</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>06557057-FADD-943D-2981-209F13666856</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="EBEED8F6-73B9-7CB2-67C8-B42131766343" name="pk menu categories">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>CE1FB717-82FC-05E3-C842-854F99433E8B</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>EB1621EC-F289-7A03-6B5D-8B650CD5DEBD</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="252603F4-04DA-B149-0ACA-A0B97C4F59E2" name="uq menu categories name">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>D9CC4007-4A46-355E-5BE2-A46EB62AE801</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<newElementsIDs>488611CB-7723-A9DE-A5F2-6DEDE3890C79,5FA0B7D6-B6BF-6527-37EF-DA84AC9C7763,AC76E59B-9D1A-9B88-75A5-FAEFADE9A933</newElementsIDs>
+<usedAttributes>
+<attributeRef>2B56BDD2-D1B3-CA55-F3B7-8063E84740C2</attributeRef>
+<attributeRef>AC76E59B-9D1A-9B88-75A5-FAEFADE9A933</attributeRef>
+<attributeRef>5FA0B7D6-B6BF-6527-37EF-DA84AC9C7763</attributeRef>
+<attributeRef>AC76E59B-9D1A-9B88-75A5-FAEFADE9A933</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

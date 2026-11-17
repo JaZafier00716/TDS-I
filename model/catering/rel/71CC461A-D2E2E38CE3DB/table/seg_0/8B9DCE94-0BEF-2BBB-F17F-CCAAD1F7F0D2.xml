@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8B9DCE94-0BEF-2BBB-F17F-CCAAD1F7F0D2" name="product_allergens">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>C8B47EB4-4FA6-AB8B-4265-67739D0BBD6C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="product_id" id="079211A4-E1E6-BAA5-0995-226B1F7D001A">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>13162D2F-C7D9-911D-8D11-9944D995A066</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="22151B88-892A-7D3E-9562-E81CF6EF995E" referredColumn="D9EE6BE7-FD37-0466-5F6B-2532E70C7AB0"/>
+</associations>
+</Column>
+<Column name="allergen_id" id="A8369D22-3B9C-2E5E-1BC4-06033C7149B2">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>04F0CA38-6D28-4331-E3C1-C536ED7CF695</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>C300A069-C5BE-B366-FA12-E2C7578A0484</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F1B8F102-CC62-40FB-1B29-AE1C0D9E32F7" referredColumn="1B4C7275-1583-E47E-4732-765321940831"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="23D94155-9164-21E8-92E1-EEDB12D4CDB7" name="pk_product_allergens">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>2D7DCDE3-800E-4A30-FF9B-D6010BFE4248</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="079211A4-E1E6-BAA5-0995-226B1F7D001A"/>
+<colUsage columnID="A8369D22-3B9C-2E5E-1BC4-06033C7149B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DDDB7959-FD22-FAB1-4A09-750C0F78F0B6" name="fk_product_allergens_allergen">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8369D22-3B9C-2E5E-1BC4-06033C7149B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5E94DBAF-DF48-5D7C-CCB2-12D849736AB1" name="fk_product_allergens_product">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="079211A4-E1E6-BAA5-0995-226B1F7D001A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

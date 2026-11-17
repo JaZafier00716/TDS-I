@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="trg_projects_customer_fixed" directorySegmentName="seg_0" id="32DD4A96-C8A1-F9B0-EDBD-133249FD431F">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:16 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<actions>UPDATE</actions>
+<body><![CDATA[BEGIN
+  RAISE_APPLICATION_ERROR(-20001, 'A project cannot be moved to another customer.');
+END;]]></body>
+<triggerTime>BEFORE</triggerTime>
+<columns>CEC75DC8-AC3B-6312-5C1F-A4018BE1D9FC</columns>
+<condition><![CDATA[OLD.customer_id <> NEW.customer_id]]></condition>
+<table>15F46FA6-4244-B494-4825-DF5E7ECD2384</table>
+</TriggerOraclev10g>

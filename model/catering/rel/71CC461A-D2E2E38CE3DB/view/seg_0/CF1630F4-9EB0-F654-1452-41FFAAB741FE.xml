@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableView class="oracle.dbtools.crest.model.design.relational.TableView" directorySegmentName="seg_0" id="CF1630F4-9EB0-F654-1452-41FFAAB741FE" name="v_menu_revision_totals">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>A03283D8-BF85-F12E-B057-B1906C3D1A1D</importedID>
+<userDefined>true</userDefined>
+<userDefinedSQL><![CDATA[SELECT r.menu_id,
+       r.revision_no,
+       m.project_id,
+       m.name                                   AS menu_name,
+       r.state,
+       r.created_at,
+       COUNT(i.product_id)                      AS item_count,
+       NVL(SUM(i.quantity * i.unit_price), 0)   AS total_price,
+       ROUND(NVL(SUM(i.quantity * i.unit_price), 0) / p.guest_count, 2) AS price_per_guest
+FROM menu_revisions r
+JOIN menus m           ON m.menu_id = r.menu_id
+JOIN projects p        ON p.project_id = m.project_id
+LEFT JOIN menu_categories c ON c.menu_id = r.menu_id AND c.revision_no = r.revision_no
+LEFT JOIN menu_items i ON i.category_id = c.category_id
+GROUP BY r.menu_id, r.revision_no, m.project_id, m.name, r.state, r.created_at, p.guest_count]]></userDefinedSQL>
+<viewElements>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="menu_id" id="BEF98A25-82AA-1FC1-8C91-01E47DE2254D">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<headerAlias>menu_id</headerAlias>
+<reference>false</reference>
+<referencedColumn>DAC22380-E307-5532-4628-F000276FFDB6</referencedColumn>
+<table>F33B834B-6731-7EC5-6C92-8E57C73826EA</table>
+<tableAlias>r</tableAlias>
+<viewID>CF1630F4-9EB0-F654-1452-41FFAAB741FE</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="revision_no" id="CBC0E0BC-5613-94C8-8CF8-A4619E7CB0C3">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (4)</dataType>
+<headerAlias>revision_no</headerAlias>
+<reference>false</reference>
+<referencedColumn>E742E1EE-3C2E-3EAA-D8EB-C51A146D0148</referencedColumn>
+<table>F33B834B-6731-7EC5-6C92-8E57C73826EA</table>
+<tableAlias>r</tableAlias>
+<viewID>CF1630F4-9EB0-F654-1452-41FFAAB741FE</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="project_id" id="E47BFE62-2806-9AED-1ABA-48D5CB216657">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>NUMBER (10)</dataType>
+<headerAlias>project_id</headerAlias>
+<reference>false</reference>
+<referencedColumn>C724BFAC-EC97-AD44-2371-754D181ECF8C</referencedColumn>
+<table>C524E509-7F9C-B149-5499-FE3D460AB114</table>
+<tableAlias>m</tableAlias>
+<viewID>CF1630F4-9EB0-F654-1452-41FFAAB741FE</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="menu_name" id="D5F3F47B-C97D-E90C-8616-28D6C1CF3909">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>menu_name</alias>
+<dataType>VARCHAR2 (100 CHAR)</dataType>
+<headerAlias>menu_name</headerAlias>
+<reference>false</reference>
+<referencedColumn>AD9D71D6-FD15-A13A-1A53-855B9BA3BB34</referencedColumn>
+<table>C524E509-7F9C-B149-5499-FE3D460AB114</table>
+<viewID>CF1630F4-9EB0-F654-1452-41FFAAB741FE</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="state" id="66ABA3B3-6B07-BF49-C2A9-D9602C1A7C54">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>VARCHAR2 (8 CHAR)</dataType>
+<headerAlias>state</headerAlias>
+<reference>false</reference>
+<referencedColumn>4D81CE99-187F-217A-3BC6-9C9D9F75B810</referencedColumn>
+<table>F33B834B-6731-7EC5-6C92-8E57C73826EA</table>
+<tableAlias>r</tableAlias>
+<viewID>CF1630F4-9EB0-F654-1452-41FFAAB741FE</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="created_at" id="32709A9B-C348-1C6B-2B03-0886523B1C4D">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<dataType>TIMESTAMP WITH TIME ZONE</dataType>
+<headerAlias>created_at</headerAlias>
+<reference>false</reference>
+<referencedColumn>A81BF363-5ABF-D5CE-BF7C-BC117D16C2CC</referencedColumn>
+<table>F33B834B-6731-7EC5-6C92-8E57C73826EA</table>
+<tableAlias>r</tableAlias>
+<viewID>CF1630F4-9EB0-F654-1452-41FFAAB741FE</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="item_count" id="0EE5CB82-56BC-5B0A-C5AC-C7B2FB9616AD">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>item_count</alias>
+<dataType>UNKNOWN</dataType>
+<headerAlias>item_count</headerAlias>
+<expression>COUNT(i.product_id)</expression>
+<reference>false</reference>
+<viewID>CF1630F4-9EB0-F654-1452-41FFAAB741FE</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="total_price" id="36EC6CE7-D861-35FD-0395-6584E282F82D">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>total_price</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>total_price</headerAlias>
+<expression>NVL(SUM(i.quantity*i.unit_price),0)</expression>
+<reference>false</reference>
+<viewID>CF1630F4-9EB0-F654-1452-41FFAAB741FE</viewID>
+</viewElement>
+<viewElement class="oracle.dbtools.crest.model.design.relational.ColumnView" name="price_per_guest" id="00107C14-7044-021B-A457-E0F94F30EC44">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<alias>price_per_guest</alias>
+<dataType>NUMBER</dataType>
+<headerAlias>price_per_guest</headerAlias>
+<expression>ROUND(NVL(SUM(i.quantity*i.unit_price),0)/p.guest_count,2)</expression>
+<reference>false</reference>
+<viewID>CF1630F4-9EB0-F654-1452-41FFAAB741FE</viewID>
+</viewElement>
+</viewElements>
+</TableView>

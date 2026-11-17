@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="1AF05344-2C45-CEED-FC43-715AFFC86A14" name="ck_comments_arc">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>FEC6DA53-3A15-7A38-5F97-1BC01DB6A3BC</importedID>
+<mandatory>true</mandatory>
+<table>DD909E15-A7CC-C852-3367-8C7807E63B31</table>
+<fkeys>
+<fkeyID>F510105C-0E33-E848-C800-93085D37272A</fkeyID>
+<fkeyID>03617F34-A9AC-5263-E53B-9659E9FC4FB5</fkeyID>
+</fkeys>
+</FKArc>

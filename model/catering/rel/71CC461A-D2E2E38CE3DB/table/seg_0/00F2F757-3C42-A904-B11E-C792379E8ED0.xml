@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="00F2F757-3C42-A904-B11E-C792379E8ED0" name="users">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>D0870C23-7410-14B3-2904-7E14AF5AB232</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="529706CD-BED7-A5A0-64E8-20D847748F93">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>90738BFF-885E-70B0-B76F-3149E3F7C467</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<defaultValue>seq_users.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_users</autoIncrementSequenceName>
+</Column>
+<Column name="username" id="7CE2F4D5-FA91-5713-60EA-DBEACD6064EB">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>78C15C11-8163-69B8-83F6-1E53283C9892</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>8D0742A2-FEFE-712C-ABDE-FAA8D618B662</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="full_name" id="474AB86F-D35E-423E-BBF3-0698E2C1613A">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>723824A6-6774-7F3D-5BC0-D9E03F20F038</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>43763C6B-8143-6EA5-C262-DA2B92BB7183</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="DA33BB3E-73B0-44A4-5FE0-4BB47A28F9B1">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>7586121C-8B58-8E4C-E625-B88C29BAAF38</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C3A5644A-9142-339E-2820-7FADB339C764</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password_hash" id="86A3167F-3A49-D8CE-69EE-0F0F8751A281">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>EAA33CB7-BED4-5A0D-34CB-FCA44B4957B6</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>91DF1FA5-A38A-C030-46FE-C6653345586D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="active" id="43B64ADF-97FD-725D-770D-A8734946FF33">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>B6BD01E5-DF60-36D9-7691-4B1685F91737</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>75589153-5A73-30A8-8D39-EF2ADC6A605D</domain>
+<defaultValue>&apos;Y&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="supervisor_id" id="30B41599-53C1-26EA-DCD7-B8C9ED4468E6">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>ACCCB665-91D3-1BBA-B676-F0060B05CA86</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2260A65C-488C-A970-F571-82F050803870" referredColumn="529706CD-BED7-A5A0-64E8-20D847748F93"/>
+</associations>
+</Column>
+<Column name="created_at" id="BDF90812-6879-1601-3D65-02A3F927CBD8">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>712C68EA-0A2D-A2A9-ECAF-CB17C699D555</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>7F9637BA-1628-DD0D-FC5E-5D5D04FACC59</domain>
+<defaultValue>LOCALTIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F91A9AF2-7885-BC26-1774-279E9FE39A34" name="pk_users">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>0529AEDE-E888-8094-0120-E50C025FBC08</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="529706CD-BED7-A5A0-64E8-20D847748F93"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2C332DC2-347A-7094-3A54-2F7F5C73D7AB" name="uq_users_username">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>FEB4DABF-08E9-FCF7-C0F1-8235417191CD</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7CE2F4D5-FA91-5713-60EA-DBEACD6064EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4983690-E46E-AB5B-4752-AF3B46300C7B" name="fk_users_supervisor">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30B41599-53C1-26EA-DCD7-B8C9ED4468E6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ck_users_active" directorySegmentName="seg_0" id="215DF082-6214-BF89-D55C-02EE22079120">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>2A0B8F38-D637-7668-27AF-F46CE9726948</importedID>
+<rule><![CDATA[active IN ('Y', 'N')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ck_users_email" directorySegmentName="seg_0" id="F21684BC-358B-7B1F-DED3-5366DD743159">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>125C7E24-0865-72B5-52E4-E93963F25BCB</importedID>
+<rule><![CDATA[REGEXP_LIKE(email, '^[^@ ]+@[^@ ]+\.[a-z]{2,}$', 'i')]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ck_users_no_self_supervisor" directorySegmentName="seg_0" id="58797956-A0D2-6EC6-2632-BE44AC5445E6">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>347259A7-7BDC-8A0B-7029-6843361432A9</importedID>
+<rule><![CDATA[supervisor_id <> user_id]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="16B22783-8614-D003-17BD-FD14F9FFCFE0" containerWithKeyObject="FADA6A42-164C-F9E0-C3E1-923477520013" localFKIndex="2ACB1B28-F3CE-9592-4587-F4D214299924" name="fk_menu_categories_revision">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>3C40B313-7F88-7112-24EF-DF6604638792</importedID>
+<referredTableLongName>menu_revisions</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>F33B834B-6731-7EC5-6C92-8E57C73826EA</referredTableID>
+<keyObject>62CD63A9-5D2F-A9B6-E312-A8E7BB048F45</keyObject>
+<referredKeyID>62CD63A9-5D2F-A9B6-E312-A8E7BB048F45</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>menu_id,revision_no</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

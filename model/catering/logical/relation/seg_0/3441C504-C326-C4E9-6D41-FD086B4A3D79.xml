@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_menu_revisions_user" directorySegmentName="seg_0" id="3441C504-C326-C4E9-6D41-FD086B4A3D79">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>0D34F36A-60BA-9CD9-B5B6-EE093EEA6AE6</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<sourcePk>538FDF1D-7573-4DFE-0E5F-2E8A0039A952</sourcePk>
+<targetPk>744E86F3-270E-54C7-41F2-7949563E9C76</targetPk>
+<identifying>false</identifying>
+<nameOnSource>creates</nameOnSource>
+<nameOnTarget>is created by</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BF5570EA-36C6-02B1-362E-443BC0084864</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>038DF59B-BC15-86AF-725B-2D45FAA3D318</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

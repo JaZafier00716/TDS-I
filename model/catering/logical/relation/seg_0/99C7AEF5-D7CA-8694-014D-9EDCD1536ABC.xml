@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_menus_node" directorySegmentName="seg_0" id="99C7AEF5-D7CA-8694-014D-9EDCD1536ABC">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>E1ECDA8E-655F-8FA0-298C-386C2774FC54</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<sourcePk>A9306609-C13A-4CC2-CA9B-A53471358D31</sourcePk>
+<targetPk>3F3D826C-B988-C35A-9DE2-72D60135409F</targetPk>
+<identifying>false</identifying>
+<nameOnSource>represents</nameOnSource>
+<nameOnTarget>is represented by</nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9DAD1DFD-0904-9660-0196-DCA86B6710C0</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>14295F5D-207E-5E0E-26C6-164C800BBF40</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

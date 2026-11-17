@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_projects_user" directorySegmentName="seg_0" id="D262CAA7-D53F-DBFA-546F-8D04931435E5">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>992DD24F-95E0-4FAD-987C-EE296A2D46F3</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<sourcePk>538FDF1D-7573-4DFE-0E5F-2E8A0039A952</sourcePk>
+<targetPk>76FBD56E-2D97-53BA-D6E8-8AE0A4E6DD35</targetPk>
+<identifying>false</identifying>
+<nameOnSource>is responsible for</nameOnSource>
+<nameOnTarget>is managed by</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BF5570EA-36C6-02B1-362E-443BC0084864</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>93633A03-F519-152C-EF21-1BED07BB1B52</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

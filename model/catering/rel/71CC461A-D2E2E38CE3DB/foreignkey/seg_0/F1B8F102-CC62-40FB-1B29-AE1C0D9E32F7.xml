@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F1B8F102-CC62-40FB-1B29-AE1C0D9E32F7" containerWithKeyObject="8B9DCE94-0BEF-2BBB-F17F-CCAAD1F7F0D2" localFKIndex="DDDB7959-FD22-FAB1-4A09-750C0F78F0B6" name="fk_product_allergens_allergen">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>1CFBA14B-B93D-E25D-20CB-62B5A1D85CB7</importedID>
+<referredTableLongName>allergens</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5F05849C-503D-6569-3D76-53693D7FB4F9</referredTableID>
+<keyObject>C2EF5E8A-918E-B01D-D32B-F0DA35A3CAE2</keyObject>
+<referredKeyID>C2EF5E8A-918E-B01D-D32B-F0DA35A3CAE2</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>allergen_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

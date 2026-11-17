@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="03617F34-A9AC-5263-E53B-9659E9FC4FB5" containerWithKeyObject="DD909E15-A7CC-C852-3367-8C7807E63B31" localFKIndex="5660303F-3550-E5C5-C580-8812372987AD" name="fk_comments_item">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>B79B9EE0-D6CC-21D6-3A4B-9483A0E38E04</importedID>
+<referredTableLongName>menu_items</referredTableLongName>
+<arc>1AF05344-2C45-CEED-FC43-715AFFC86A14</arc>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>9DF1E28F-E2D6-BFCF-0897-8BF3FE333F13</referredTableID>
+<keyObject>BD23C226-DB1D-5025-6385-9CEF6F586462</keyObject>
+<referredKeyID>BD23C226-DB1D-5025-6385-9CEF6F586462</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>category_id,product_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

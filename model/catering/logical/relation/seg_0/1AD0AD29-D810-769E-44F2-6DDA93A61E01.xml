@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_users_supervisor" directorySegmentName="seg_0" id="1AD0AD29-D810-769E-44F2-6DDA93A61E01">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>2260A65C-488C-A970-F571-82F050803870</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<sourcePk>538FDF1D-7573-4DFE-0E5F-2E8A0039A952</sourcePk>
+<targetPk>538FDF1D-7573-4DFE-0E5F-2E8A0039A952</targetPk>
+<identifying>false</identifying>
+<nameOnSource>supervises</nameOnSource>
+<nameOnTarget>reports to</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BF5570EA-36C6-02B1-362E-443BC0084864</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BF5570EA-36C6-02B1-362E-443BC0084864</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

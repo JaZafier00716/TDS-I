@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_share_links_revision" directorySegmentName="seg_0" id="A217DDA4-B2E3-61A7-2735-6B0C191246A5">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>E35C5B9A-D54A-00EB-69FB-76032C047605</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<sourcePk>744E86F3-270E-54C7-41F2-7949563E9C76</sourcePk>
+<targetPk>7500FEA6-F240-B54E-98AC-F35699BDC26F</targetPk>
+<identifying>false</identifying>
+<nameOnSource>is shared via</nameOnSource>
+<nameOnTarget>shares</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>038DF59B-BC15-86AF-725B-2D45FAA3D318</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>B96EBCCC-06ED-3D47-AEE1-71413C0D375F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

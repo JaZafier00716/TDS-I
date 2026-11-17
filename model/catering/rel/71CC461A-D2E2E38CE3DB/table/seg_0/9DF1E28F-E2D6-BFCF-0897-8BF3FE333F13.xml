@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="9DF1E28F-E2D6-BFCF-0897-8BF3FE333F13" name="menu_items">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>541E1B5A-378E-7BB3-49E4-AA8F087266C3</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="category_id" id="486AEEAB-DE7E-9FA1-CC0F-F1D9CB50446C">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>1E85826E-F8D6-893F-9273-56124C8E0170</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FBF5D2C6-8E18-BF3B-6B24-7DF6A30CC218" referredColumn="7C786D0D-2757-8915-D115-C7C27CCB1AAA"/>
+</associations>
+</Column>
+<Column name="product_id" id="E5661F45-7F2C-5C0F-9ADB-9431BFF08807">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>E881A6F6-2BB5-F099-9DEB-77C87AA1CC8D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CB33F87E-53CE-3815-A95C-1A9072667174" referredColumn="D9EE6BE7-FD37-0466-5F6B-2532E70C7AB0"/>
+</associations>
+</Column>
+<Column name="quantity" id="85CC3F74-46A2-8EAA-1E19-B56FC8738A97">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>84C59A99-022F-C979-4EE7-2570BF680B49</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>DD387465-BA99-A7F9-D6B6-59441532B8A2</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="unit_price" id="DEA70A0D-E358-1945-2E41-CE15A7ED081F">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>13520BDC-ABF0-7147-F368-0FEC69CED130</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>D7A89057-96A3-DE81-8EC3-9ABCD7E78D74</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="note" id="81CF8B0C-4FC4-1027-7AEB-BCC737669453">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>3E1BACE7-516B-D193-2996-E08DDA413C9A</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>91DF1FA5-A38A-C030-46FE-C6653345586D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BD23C226-DB1D-5025-6385-9CEF6F586462" name="pk_menu_items">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>FA84ECDF-DCA2-27FF-A703-CA9E2ED1065E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="486AEEAB-DE7E-9FA1-CC0F-F1D9CB50446C"/>
+<colUsage columnID="E5661F45-7F2C-5C0F-9ADB-9431BFF08807"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E4DE4058-17D9-F5DD-D7B7-2D626FA0EDFE" name="ix_menu_items_product">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>B07C8BD1-D50E-145E-700A-8F4AC9080F11</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5661F45-7F2C-5C0F-9ADB-9431BFF08807"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6A715B24-EE25-2D02-4BAE-5F2F7A024ED5" name="fk_menu_items_category">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="486AEEAB-DE7E-9FA1-CC0F-F1D9CB50446C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F5C66C40-1797-0F16-08D4-F3F90CB6435C" name="fk_menu_items_product">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5661F45-7F2C-5C0F-9ADB-9431BFF08807"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ck_menu_items_quantity" directorySegmentName="seg_0" id="3C122144-6727-091A-93EC-D52A8919582C">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>F44892B3-A6C6-D702-7F72-6939F9FED011</importedID>
+<rule><![CDATA[quantity > 0]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ck_menu_items_price" directorySegmentName="seg_0" id="73A87925-8FAE-79B1-D96E-AEF665D035FD">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>BC5EED4A-AB70-D8AF-D302-16D22AC6A602</importedID>
+<rule><![CDATA[unit_price >= 0]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

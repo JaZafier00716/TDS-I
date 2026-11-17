@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="024B8A2A-B8B1-E5AA-DBCF-CB5853E695E6" name="roles">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>6ED4ABE4-8BF6-5DFD-951B-E6E2C9254891</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="role_code" id="793BB2A2-E2A1-FBDC-647C-B749CA5A73E1">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>2CF4AF50-9B63-7A84-2435-EEA5913AD49A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<domain>DDE38D6F-4EE4-AD4E-34B5-D7C1949D2784</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="057BF243-8316-7319-DBC4-40EF5D1DEAC4">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>78B4756F-0040-7627-9E94-FC1880D26267</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>1477B134-250A-EDE3-CEB4-296EF0E7503E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A10B3801-5C8D-9189-D684-AB927F191618" name="pk_roles">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>B4EE5B6D-23EB-8B03-FC41-B29E4D274AAF</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="793BB2A2-E2A1-FBDC-647C-B749CA5A73E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E7BDE83E-480E-A0A0-94C6-19B55CF7ACE7" name="uq_roles_name">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>2545DADA-429D-435A-6437-B0FDB7CAF68E</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="057BF243-8316-7319-DBC4-40EF5D1DEAC4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ck_roles_code" directorySegmentName="seg_0" id="84F838BE-8192-77DB-B4F7-59E599E01255">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>EEB60573-BDBD-16EA-8438-846ADA0921C4</importedID>
+<rule><![CDATA[role_code IN ('ADMIN', 'WORKER', 'MANAGER')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

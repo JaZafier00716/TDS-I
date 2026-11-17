@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_user_roles_role" directorySegmentName="seg_0" id="0E4AAA51-F0EE-0989-48A6-289EB5F7A0F9">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>CA8B1B38-C42B-9978-4F0D-9DDF58451669</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<sourcePk>0F2DEE9E-826A-0766-762E-6F7B9B8D2143</sourcePk>
+<targetPk>B2A9D7B2-8A5F-601B-F235-07769DE42FA9</targetPk>
+<identifying>true</identifying>
+<nameOnSource>is granted in</nameOnSource>
+<nameOnTarget>grants</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E211739C-1C25-7BD9-0A44-9C0BC3558719</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D517E95D-504D-6720-25C4-BDA9D701938E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_product_allergens_product" directorySegmentName="seg_0" id="BA5DC20E-7CC0-948F-CCFB-481541624C35">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>22151B88-892A-7D3E-9562-E81CF6EF995E</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<sourcePk>ED567B30-5F8A-38FC-F01C-24ED368A591C</sourcePk>
+<targetPk>1CBA3220-62FB-B140-E1E0-3EDACF314099</targetPk>
+<identifying>true</identifying>
+<nameOnSource>contains</nameOnSource>
+<nameOnTarget>is contained in</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E99D7FC1-A5FA-057C-86E5-CFDA5EEB8550</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5A3C6EFD-3002-4115-A151-28FF444B8B23</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

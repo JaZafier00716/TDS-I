@@ -1,0 +1,149 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F33B834B-6731-7EC5-6C92-8E57C73826EA" name="menu_revisions">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Every saved change of a menu is a new revision; revisions are never overwritten.]]></commentInRDBMS>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>21EA6E50-ACF2-E338-2B63-54D8D36C9520</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="menu_id" id="DAC22380-E307-5532-4628-F000276FFDB6">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>981B9AF3-068F-33C4-3FA8-422AB6D91841</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="04AD34E9-0588-3498-A1EE-893F9BAEBB53" referredColumn="E9871138-66F9-A37F-8825-3C4A02BDC1E2"/>
+</associations>
+</Column>
+<Column name="revision_no" id="E742E1EE-3C2E-3EAA-D8EB-C51A146D0148">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>9DAB69F0-A373-3C6B-3EE5-201E5B5706B2</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>737940B5-35A5-EC28-EF28-262F041059A1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="state" id="4D81CE99-187F-217A-3BC6-9C9D9F75B810">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>06E4BA44-DF45-F3D0-05C8-629F7A2A3821</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>C42AF1BE-6211-8230-ECA9-E534C52403E7</domain>
+<defaultValue>&apos;WORKING&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="note" id="46B888DE-56D0-2F71-87B4-E031D5FF8DD9">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>92418E0A-228E-C465-AF7E-C5C01AA76FB2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>76DF508B-5FA8-D867-89CF-355405127482</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_by" id="100923A8-643F-D3C4-4896-B77A77EB00B1">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>294C5373-4705-C691-5E87-641BF771B90D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0D34F36A-60BA-9CD9-B5B6-EE093EEA6AE6" referredColumn="529706CD-BED7-A5A0-64E8-20D847748F93"/>
+</associations>
+</Column>
+<Column name="created_at" id="A81BF363-5ABF-D5CE-BF7C-BC117D16C2CC">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>8D736345-F9A0-3A0C-508E-26CB33C4D379</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT046</logicalDatatype>
+<domain>7CE67304-E1F1-5265-4FF2-66D32ACCDB7D</domain>
+<defaultValue>SYSTIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="62CD63A9-5D2F-A9B6-E312-A8E7BB048F45" name="pk_menu_revisions">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>DB61FA11-1841-C9D2-9029-2B52DF2ED8CF</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DAC22380-E307-5532-4628-F000276FFDB6"/>
+<colUsage columnID="E742E1EE-3C2E-3EAA-D8EB-C51A146D0148"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5A7F1892-16EC-DB0B-B3DD-00C5DD3BBBC9" name="fk_menu_revisions_menu">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DAC22380-E307-5532-4628-F000276FFDB6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="080A7EC7-8FC5-7108-F530-8A4A0A784DA4" name="fk_menu_revisions_user">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="100923A8-643F-D3C4-4896-B77A77EB00B1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ck_menu_revisions_no" directorySegmentName="seg_0" id="16DBE69B-18B0-AAD7-0677-395C65ED134D">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>D07CFD08-203D-C3B7-4808-276EAAB076D0</importedID>
+<rule><![CDATA[revision_no >= 1]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ck_menu_revisions_state" directorySegmentName="seg_0" id="5114699C-3D82-B5A4-4896-DB4B6D3D1AF3">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>EFE6580F-3456-F996-3255-9BE42B5E190F</importedID>
+<rule><![CDATA[state IN ('WORKING', 'SHARED')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

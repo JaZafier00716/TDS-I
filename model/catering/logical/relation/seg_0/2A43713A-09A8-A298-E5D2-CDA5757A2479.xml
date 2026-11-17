@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_comments_resolved_by" directorySegmentName="seg_0" id="2A43713A-09A8-A298-E5D2-CDA5757A2479">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>07ACFFE9-CCE8-C390-9707-7DD6DF811A6B</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<sourcePk>538FDF1D-7573-4DFE-0E5F-2E8A0039A952</sourcePk>
+<targetPk>DD1B31AA-ABAA-F50B-526E-6B9F6EA8FAEE</targetPk>
+<identifying>false</identifying>
+<nameOnSource>resolves</nameOnSource>
+<nameOnTarget>is resolved by</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BF5570EA-36C6-02B1-362E-443BC0084864</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>739C60D9-9C92-E501-B60A-30526322C35F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

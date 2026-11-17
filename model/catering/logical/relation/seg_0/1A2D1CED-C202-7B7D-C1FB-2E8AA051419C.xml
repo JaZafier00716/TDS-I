@@ -1,0 +1,23 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="fk_price_history_product" directorySegmentName="seg_0" id="1A2D1CED-C202-7B7D-C1FB-2E8AA051419C">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:17:17 UTC</createdTime>
+<generatorID>C4BA7E19-AABA-7E42-E884-ABB9E2A1D1A5</generatorID>
+<ownerDesignName>catering</ownerDesignName>
+<engineerTo>
+<item key="71CC461A-001E-857F-400C-D2E2E38CE3DB" value="true"/>
+</engineerTo>
+<sourcePk>ED567B30-5F8A-38FC-F01C-24ED368A591C</sourcePk>
+<targetPk>6446D8DA-C2F6-8467-33E6-B78177371E22</targetPk>
+<identifying>false</identifying>
+<nameOnSource>has</nameOnSource>
+<nameOnTarget>records the price of</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E99D7FC1-A5FA-057C-86E5-CFDA5EEB8550</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>370D8A26-F3E5-D00C-2016-BF67F911C1C4</targetEntity>
+<transferable>true</transferable>
+<deleteRule>CASCADE</deleteRule>
+</Relation>

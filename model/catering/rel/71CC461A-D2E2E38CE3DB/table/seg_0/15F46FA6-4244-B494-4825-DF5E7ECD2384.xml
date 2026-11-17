@@ -1,0 +1,244 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="15F46FA6-4244-B494-4825-DF5E7ECD2384" name="projects">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>8B347FDF-9746-A6A3-EFAB-21CEC1EA5908</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="project_id" id="08BA7FE8-5DA0-97AC-AD67-814FBAD74808">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>32CEF6C3-2FFD-3334-1C22-1B554587C509</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<defaultValue>seq_projects.NEXTVAL</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<autoIncrementSequenceName>seq_projects</autoIncrementSequenceName>
+</Column>
+<Column name="customer_id" id="CEC75DC8-AC3B-6312-5C1F-A4018BE1D9FC">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>82D9C345-DC1F-1E54-C28F-7FE6EC618807</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65C91EC5-3894-F50C-CD79-9F9DFC4412B3" referredColumn="B75659DB-8B16-39E2-18E1-BE6CF6877996"/>
+</associations>
+</Column>
+<Column name="responsible_user_id" id="EE100710-3904-A919-D7EB-A0620363C401">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>5A84C2DE-4861-3A70-399F-27C619305698</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>0A41C2E6-8518-E286-8D8E-01DE505DCA89</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="992DD24F-95E0-4FAD-987C-EE296A2D46F3" referredColumn="529706CD-BED7-A5A0-64E8-20D847748F93"/>
+</associations>
+</Column>
+<Column name="name" id="137E2A39-3D48-E333-55B4-82D4EA88B26D">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>6BA01339-EED4-42DD-0FDB-CF2A61DF737D</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>23582D81-D597-FBAA-91F1-E165C90C0D7E</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="event_date" id="94E93292-22CB-1236-379C-7ADB99033421">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>8C366664-9941-E95C-9296-947AA91CCCC4</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<domain>51B126A2-94C8-BE8B-7264-9FE103B24044</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="event_duration" id="819C8C25-2555-98F2-7683-546B385C5288">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>ADBDFCA4-98D8-FE57-D62D-4D8245C1B3F8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT049</logicalDatatype>
+<domain>8C1A675B-9108-D44C-B1F9-FD073E360088</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="event_place" id="D8137E8D-98BD-5C49-C0C8-F1B8439CA10B">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>D7888148-4385-3B13-3959-FB0025EBD765</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>91DF1FA5-A38A-C030-46FE-C6653345586D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="guest_count" id="B932560D-F89C-E729-988C-CF711D21F92A">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>80EE7E83-1E5F-910B-D0A2-AC84FC6779C7</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>CA8DA312-D8A9-BA86-0689-1A191EC01E4D</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="FE0234DA-8103-4A57-BE25-34E0C4C0E064">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>ACE2F9E4-5F07-E7FD-35C5-FDBF132290A8</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>FBDFAD7D-4C0B-A05C-3B7E-F444E833EFE7</domain>
+<defaultValue>&apos;IN_PROGRESS&apos;</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="retention_period" id="CFE01A0D-F0D2-EE99-F7B5-6764CF52524F">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>206CA29D-AB12-43A5-C272-FC74C076B565</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT048</logicalDatatype>
+<domain>2F9BBC56-2ECB-4D47-88E6-5F7C212D8804</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="note" id="48C2DB5A-08E5-F14E-A0BC-402EE1050610">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>710FD87A-0B79-9694-5E67-B699E045DA36</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT028</logicalDatatype>
+<domain>6C10FCDD-7FD6-3B46-8638-1929D15B23C1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="created_at" id="E232F867-CF2F-C157-55D1-8C0CA02A0DCA">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>6AE343C5-81BF-55F1-D9C4-93A0AA8AAAD9</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<domain>7F9637BA-1628-DD0D-FC5E-5D5D04FACC59</domain>
+<defaultValue>LOCALTIMESTAMP</defaultValue>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F7601A58-130D-21CD-B3D2-A348EFCBEC22" name="pk_projects">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>E61DA5A9-553F-66A0-0859-15607CAE3601</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="08BA7FE8-5DA0-97AC-AD67-814FBAD74808"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AE7FAC8C-38D6-91F6-8F58-A3572882F84B" name="ix_projects_customer">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>AA38D333-5142-A7E1-96FE-881272FE42D2</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEC75DC8-AC3B-6312-5C1F-A4018BE1D9FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BB2CCEC5-CE30-59C5-0AF5-D36C12DC5BE3" name="ix_projects_event_date">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>8AD2048D-68AB-DC19-541A-A69B79A2C863</importedID>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="94E93292-22CB-1236-379C-7ADB99033421"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E72616CF-5996-EBA4-7A94-A5DB814134DE" name="fk_projects_customer">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CEC75DC8-AC3B-6312-5C1F-A4018BE1D9FC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="89842214-CF4A-9A6B-2ED7-07EDC5391295" name="fk_projects_user">
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE100710-3904-A919-D7EB-A0620363C401"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="ck_projects_guests" directorySegmentName="seg_0" id="34569DAC-24CD-D926-3891-4FC5F5E182B3">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>ACFD0140-3E8B-C36C-231F-D4DC055FA9C8</importedID>
+<rule><![CDATA[guest_count > 0]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="ck_projects_status" directorySegmentName="seg_0" id="67C0D944-5DC4-B652-B015-C4E85D5F485C">
+<sourceDDLFile>01_schema.sql</sourceDDLFile>
+<createdBy>jan</createdBy>
+<createdTime>2026-11-16 22:01:22 UTC</createdTime>
+<ownerDesignName>catering</ownerDesignName>
+<importedID>14AF7291-5766-D3C7-2384-28212834F5E7</importedID>
+<rule><![CDATA[status IN ('IN_PROGRESS', 'CONFIRMED', 'DONE', 'ARCHIVED')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>
